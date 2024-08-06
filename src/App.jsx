@@ -26,7 +26,6 @@ function App() {
       console.log("Error occured")
     })
   }
-  console.log(forecast)
   return (
     <>
     <div className="container max-w-[1366px] my-[20px] mx-auto">
