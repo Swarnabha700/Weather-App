@@ -25,10 +25,10 @@ const Forcast = ({ data }) => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <div className="dailyDetailsGrid grid gap-y-0 gap-x-4 grid-cols-2 flex-1 py-1 px-4">
+                <div className="dailyDetailsGrid grid gap-y-0 justify-items-center gap-x-4 grid-cols-1 md:grid-cols-2 flex-1 py-1 px-4">
                   <div className="dailyDetailsGridItem">
                     <label >Pressure:</label>
-                    <label className='font-semibold text-[17px]'>{item.main.pressure} hPa</label>
+                    <label className='font-semibold text-[17px] '>{item.main.pressure} hPa</label>
                   </div>
                   <div className="dailyDetailsGridItem">
                     <label>Humidity:</label>
@@ -44,11 +44,11 @@ const Forcast = ({ data }) => {
                   </div>
                   <div className="dailyDetailsGridItem">
                     <label>Sea level:</label>
-                    <label className='font-semibold text-[17px]'>{item.main.sea_level} m</label>
+                    <label className='font-semibold text-[17px] '>{item.main.sea_level} m</label>
                   </div>
                   <div className="dailyDetailsGridItem">
                     <label>Feels like:</label>
-                    <label className='font-semibold text-[17px]'>{Math.round(item.main.feels_like)} °C</label>
+                    <label className='font-semibold text-[17px] '>{Math.round(item.main.feels_like)} °C</label>
                   </div>
                 </div>
               </AccordionItemPanel>
