@@ -2,7 +2,7 @@ import React from 'react'
 
 const CurrentWeather = ({data}) => {
     return (
-        <div className='w-[400px] mx-auto rounded-md shadow-2xl text-white bg-transparent md:mt-4 mt-6 mb-4 md:mb-0 px-4 pb-5 border-2 '>
+        <div className='w-[400px] mx-auto rounded-md shadow-2xl text-white bg-[#0e092e] bg-opacity-60 md:mt-4 mt-6 mb-4 md:mb-0 px-4 pb-5'>
             <div className="top flex justify-between items-center">
                 <div>
                     <p className='font-[600] text-[18px] leading-5 tracking-[1px] m-0'>{data.city}</p>
